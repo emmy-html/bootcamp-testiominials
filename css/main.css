@@ -150,7 +150,7 @@ a:hover {
     width: 90%; }
   .testimonial-content h2 {
     font-weight: 700;
-    font-size: 1.35rem;
+    font-size: 1rem;
     line-height: 1.75rem;
     padding-top: 10px; }
   .testimonial-content span {
@@ -197,7 +197,9 @@ footer {
 
   footer {
     background-size: 50%;
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+    footer p {
+      margin-top: 20px; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
