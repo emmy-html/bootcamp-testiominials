@@ -97,45 +97,82 @@ textarea {
 /* Fonts & Colors */
 $dark-blue: hsl(240, 38%, 20%);
 $grey: hsl(240, 18%, 77%);
-$font: 'Inter', sans-serif;
+$font: "Inter", sans-serif;
 $light: 300;
 $medium: 500;
 $bold: 700;
 
 /* Main Styles */
 body {
-    font-family: $font;
-    font-size: 32px;
+  font-family: $font;
+  font-size: 32px;
 }
-
-/* Slides Container */
-.slideshow-container {
-    position: relative;
-    margin: auto;
+.content-wrapper {
+  margin: 0px 30px;
+  padding-top: 55px;
 }
-
 /* Hide images by default */
 .slide {
-    display: none;
+  display: none;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Slides */
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/pattern-bg.svg");
+  background-position: top right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  .img-container {
+    margin: 0px 60px;
+  }
+  img.fade {
+    border-radius: 10px;
+    padding-top: 40px;
+    width: 100%;
+  }
+  /* Buttons */
+  .button-container {
+      background: white;
+      border-radius: 30px;
+      box-shadow: 0px 10px 12px -5px $grey;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: -25px;
+      padding: 5px 20px;
+      position: relative;
+      width: 60px;
+      z-index: 100;
+  }
 }
 
-
-/* Fading animation */ 
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
-    animation-name: fade;
-    animation-duration: 2s;
-  }
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -300,4 +337,3 @@ body {
     page-break-after: avoid;
   }
 }
-
