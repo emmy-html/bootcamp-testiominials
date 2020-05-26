@@ -110,8 +110,8 @@ body {
   font-size: 32px;
 }
 p {
-    color: $dark-blue;
-    font-weight: $light;
+  color: $dark-blue;
+  font-weight: $light;
 }
 .content-wrapper {
   margin: 0px 30px;
@@ -199,48 +199,49 @@ footer {
   padding-bottom: 10px;
   text-align: center;
 }
-/* Large Screens */ 
+/* Large Screens */
 @media (min-width: 1200px) {
-    .slideshow-container {
-        display: flex;
-        flex-direction: row;
-        .slide {
-            background-position: top right;
-            background-size: contain;
-            display: flex;
-            flex-direction: row-reverse;
-            .img-container .fade {
-                margin-top: 25px;
-                width: 90%;
-            }
-            .button-container {
-                float: left;
-                margin-left: 60px;
-            }
-        }
-        article {
-            width: 50%;
-        }
-        p {
-            font-size: 1.65rem;
-            width: 100%;
-        }
-        .testimonial-content {
-            margin-left: 165px;
-            padding-top: 35px;
-            text-align: left;
-            span {
-                display: inline-block;
-            }
-        }
+  .slideshow-container {
+    display: flex;
+    flex-direction: row;
+    .slide {
+      background-position: top right;
+      background-size: contain;
+      display: flex;
+      flex-direction: row-reverse;
+      .img-container .fade {
+        margin-top: 25px;
+        width: 90%;
+      }
+      .button-container {
+        float: left;
+        margin-left: 60px;
+      }
     }
-    footer {
-        background-size: cover;
-        padding-bottom: 20px;
-        p {
-            margin-top: 20px;
-        }
+    article {
+      width: 50%;
     }
+    p {
+      font-size: 1.65rem;
+      width: 100%;
+    }
+    .testimonial-content {
+      background-position: 75px 0px;
+      margin-left: 165px;
+      padding-top: 35px;
+      text-align: left;
+      span {
+        display: inline-block;
+      }
+    }
+  }
+  footer {
+    background-size: 50%;
+    padding-bottom: 20px;
+    p {
+      margin-top: 20px;
+    }
+  }
 }
 
 /* ==========================================================================

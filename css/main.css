@@ -189,6 +189,7 @@ footer {
       font-size: 1.65rem;
       width: 100%; }
     .slideshow-container .testimonial-content {
+      background-position: 75px 0px;
       margin-left: 165px;
       padding-top: 35px;
       text-align: left; }
@@ -196,7 +197,7 @@ footer {
         display: inline-block; }
 
   footer {
-    background-size: cover;
+    background-size: 50%;
     padding-bottom: 20px; }
     footer p {
       margin-top: 20px; } }
