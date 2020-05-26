@@ -83,6 +83,32 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 32px; }
 
+/* Slides Container */
+.slideshow-container {
+  position: relative;
+  margin: auto; }
+
+/* Hide images by default */
+.slide {
+  display: none; }
+
+/* Fading animation */
+.fade img {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

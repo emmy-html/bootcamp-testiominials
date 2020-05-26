@@ -97,7 +97,6 @@ textarea {
 /* Fonts & Colors */
 $dark-blue: hsl(240, 38%, 20%);
 $grey: hsl(240, 18%, 77%);
-
 $font: 'Inter', sans-serif;
 $light: 300;
 $medium: 500;
@@ -109,6 +108,34 @@ body {
     font-size: 32px;
 }
 
+/* Slides Container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Hide images by default */
+.slide {
+    display: none;
+}
+
+
+/* Fading animation */ 
+
+.fade img {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
