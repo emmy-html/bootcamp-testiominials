@@ -78,7 +78,7 @@ textarea {
   padding: 0.2em 0; }
 
 /* Fonts & Colors */
-/* Main Styles */
+/* Universal Styles */
 body {
   font-family: "Inter", sans-serif;
   font-size: 32px; }
@@ -86,6 +86,15 @@ body {
 .content-wrapper {
   margin: 0px 30px;
   padding-top: 55px; }
+
+a:link,
+a:visited {
+  color: #2a229b;
+  text-decoration: none; }
+
+a:hover {
+  color: #c34b85;
+  transition: 1s color; }
 
 /* Hide images by default */
 .slide {
@@ -126,8 +135,8 @@ body {
 .testimonial-content {
   background-image: url("../img/pattern-quotes.svg");
   background-position: top center;
-  background-size: 20%;
   background-repeat: no-repeat;
+  background-size: 20%;
   font-size: 1.35rem;
   margin-top: 60px;
   text-align: center; }
@@ -138,10 +147,21 @@ body {
   .testimonial-content h2 {
     font-weight: 700;
     font-size: 1.35rem;
-    line-height: 1.75rem; }
+    line-height: 1.75rem;
+    padding-top: 10px; }
   .testimonial-content span {
     color: #babacf;
     font-weight: 300; }
+
+/* Footer */
+footer {
+  background-image: url("../img/pattern-curve.svg");
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-size: .75rem;
+  padding-bottom: 10px;
+  text-align: center; }
 
 /* ==========================================================================
    Helper classes

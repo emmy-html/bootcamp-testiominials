@@ -97,12 +97,14 @@ textarea {
 /* Fonts & Colors */
 $dark-blue: hsl(240, 38%, 20%);
 $grey: hsl(240, 18%, 77%);
+$pink: hsl(331, 50%, 53%);
+$purple: hsl(244, 64%, 37%);
 $font: "Inter", sans-serif;
 $light: 300;
 $medium: 500;
 $bold: 700;
 
-/* Main Styles */
+/* Universal Styles */
 body {
   font-family: $font;
   font-size: 32px;
@@ -110,6 +112,15 @@ body {
 .content-wrapper {
   margin: 0px 30px;
   padding-top: 55px;
+}
+a:link,
+a:visited {
+    color: $purple;
+    text-decoration: none;
+}
+a:hover {
+    color: $pink;
+    transition: 1s color;
 }
 /* Hide images by default */
 .slide {
@@ -153,8 +164,8 @@ body {
 .testimonial-content {
     background-image: url("../img/pattern-quotes.svg");
     background-position: top center;
-    background-size: 20%;
     background-repeat: no-repeat;
+    background-size: 20%;
     font-size: 1.35rem;
     margin-top: 60px;
     text-align: center;
@@ -167,12 +178,23 @@ body {
         font-weight: $bold;
         font-size: 1.35rem;
         line-height: 1.75rem;
+        padding-top: 10px;
     }
     span {
         color: $grey;
         font-weight: $light;
     }
 }
+/* Footer */ 
+footer {
+    background-image: url("../img/pattern-curve.svg");
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: .75rem;
+    padding-bottom: 10px;
+    text-align: center;
+    }
 
 /* ==========================================================================
    Helper classes
