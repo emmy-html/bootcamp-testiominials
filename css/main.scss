@@ -109,6 +109,10 @@ body {
   font-family: $font;
   font-size: 32px;
 }
+p {
+    color: $dark-blue;
+    font-weight: $light;
+}
 .content-wrapper {
   margin: 0px 30px;
   padding-top: 55px;
@@ -182,13 +186,13 @@ a:hover {
   }
   span {
     color: $grey;
+    display: block;
     font-weight: $light;
   }
 }
 /* Footer */
 footer {
   background-image: url("../img/pattern-curve.svg");
-  background-position: contain;
   background-repeat: no-repeat;
   background-size: 100%;
   font-size: 0.75rem;
@@ -196,7 +200,7 @@ footer {
   text-align: center;
 }
 /* Large Screens */ 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .slideshow-container {
         display: flex;
         flex-direction: row;
@@ -205,13 +209,34 @@ footer {
             background-size: contain;
             display: flex;
             flex-direction: row-reverse;
-            .img-container img {
+            .img-container .fade {
+                margin-top: 25px;
                 width: 90%;
+            }
+            .button-container {
+                float: left;
+                margin-left: 60px;
             }
         }
         article {
             width: 50%;
         }
+        p {
+            font-size: 1.65rem;
+            width: 100%;
+        }
+        .testimonial-content {
+            margin-left: 165px;
+            padding-top: 35px;
+            text-align: left;
+            span {
+                display: inline-block;
+            }
+        }
+    }
+    footer {
+        background-size: 50%;
+        padding-bottom: 20px;
     }
 }
 

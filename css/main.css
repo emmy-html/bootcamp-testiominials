@@ -83,6 +83,10 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 32px; }
 
+p {
+  color: #202046;
+  font-weight: 300; }
+
 .content-wrapper {
   margin: 0px 30px;
   padding-top: 55px; }
@@ -151,12 +155,12 @@ a:hover {
     padding-top: 10px; }
   .testimonial-content span {
     color: #babacf;
+    display: block;
     font-weight: 300; }
 
 /* Footer */
 footer {
   background-image: url("../img/pattern-curve.svg");
-  background-position: contain;
   background-repeat: no-repeat;
   background-size: 100%;
   font-size: 0.75rem;
@@ -164,7 +168,7 @@ footer {
   text-align: center; }
 
 /* Large Screens */
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .slideshow-container {
     display: flex;
     flex-direction: row; }
@@ -173,10 +177,27 @@ footer {
       background-size: contain;
       display: flex;
       flex-direction: row-reverse; }
-      .slideshow-container .slide .img-container img {
+      .slideshow-container .slide .img-container .fade {
+        margin-top: 25px;
         width: 90%; }
+      .slideshow-container .slide .button-container {
+        float: left;
+        margin-left: 60px; }
     .slideshow-container article {
-      width: 50%; } }
+      width: 50%; }
+    .slideshow-container p {
+      font-size: 1.65rem;
+      width: 100%; }
+    .slideshow-container .testimonial-content {
+      margin-left: 165px;
+      padding-top: 35px;
+      text-align: left; }
+      .slideshow-container .testimonial-content span {
+        display: inline-block; }
+
+  footer {
+    background-size: 50%;
+    padding-bottom: 20px; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
