@@ -115,29 +115,6 @@ body {
 .slide {
   display: none;
 }
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
-  animation-name: fade;
-  animation-duration: 2s;
-}
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /* Slides */
 .slide {
   display: flex;
@@ -171,6 +148,30 @@ body {
       width: 60px;
       z-index: 100;
   }
+}
+/* Testimonial */
+.testimonial-content {
+    background-image: url("../img/pattern-quotes.svg");
+    background-position: top center;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    font-size: 1.35rem;
+    margin-top: 60px;
+    text-align: center;
+    p {
+        margin: 0 auto;
+        padding-top: 30px;
+        width: 90%;
+    }
+    h2 {
+        font-weight: $bold;
+        font-size: 1.35rem;
+        line-height: 1.75rem;
+    }
+    span {
+        color: $grey;
+        font-weight: $light;
+    }
 }
 
 /* ==========================================================================
