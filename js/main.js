@@ -4,6 +4,8 @@ showSlides(slideIndex);
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  var slides = document.getElementsByClassName("image");
+  slides[slideIndex-1].classList.add("fading");
 }
 
 
